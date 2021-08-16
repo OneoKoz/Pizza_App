@@ -1,0 +1,47 @@
+Сначала установить node.js: https://nodejs.org/en/
+
+!!!Использовать Windows-terminal(cmd)
+
+Установить Firebase CLI C:\Users\Alex>npm install -g firebase-tools
+
+Логиниться в Firebase CLI через Windows-terminal C:\Users\Alex>firebase login
+
+Перейти в Windows-terminal в папку functions проекта и запустить команду 
+    npm install firebase-functions@latest firebase-admin@latest --save
+
+Если функции деплоятся с ошибками, тогда следует заново инициализировать firebase проект:
+    firebase init (в директории проекта)
+и следовать инструкциям в командной строке:
+    - не переписывать index.js !!!
+    - указать Cloud functions
+    - опционально указать firestore rules и firestore indexes, если будешь работать локально
+    с правилами и индексами, а потом их деплоить на сервер. Но тогда при изменении в консоли
+    на сервере надо будет одновременно производить изменения в файлах firestore.indexes.json и firestore.rules.
+    Смотри ниже выдержку из мануала. Поэтому лучше не указывать firestore rules и firestore indexes
+
+You can also deploy indexes with the Firebase CLI.
+To get started, run firebase init firestore in your project directory.
+During setup, the Firebase CLI generates a JSON file with the default indexes in the correct format.
+Edit the file to add more indexes and deploy it with the firebase deploy command.
+If you only want to deploy indexes, add the --only firestore:indexes flag.
+If you make edits to the indexes using the Firebase console, make sure you also update your local indexes file.
+
+Аналогично работать с firestore rules, развёрнутыми локально в файле firestore rules
+
+Для развёртывания отдельных функций использовать:
+	firebase deploy --only functions:onCreateDictionary,functions:onDeleteDictionary
+	
+	
+!!!!!!!!!!!!!!!!!!!!!!
+
+В новых версиях требуется тщательное соблюдение стиля кодирования 
+	- отступы - 2, двойные ковычки строк, const вместо let, строка в конце файла
+
+Для устранения некоторых ошибок (напр. с =>) надо прописать в .eslintrc.js в директории проекта
+  env: {
+    es6: true,
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2017,
+  }, 

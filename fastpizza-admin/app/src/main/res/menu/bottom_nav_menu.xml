@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pizzasFragment"
+        android:icon="@drawable/ic_restaurant_menu_24"
+        android:title="@string/pizzas_fragment_label" />
+
+    <item
+        android:id="@+id/ordersFragment"
+        android:icon="@drawable/ic_shopping_basket_24"
+        android:title="@string/orders_fragment_label" />
+
+    <item
+        android:id="@+id/newPizzaFragment"
+        android:icon="@drawable/ic_add_24"
+        android:title="@string/new_pizza_fragment_label" />
+
+</menu>

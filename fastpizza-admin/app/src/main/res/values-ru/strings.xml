@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Fastpizza-admin</string>
+
+    <string name="image_desc_image">Изображение</string>
+    <string name="choose_image_btn">Выбрать изображение</string>
+    <string name="delete_image_btn">Удалить изображение</string>
+    <string name="submit_btn">Отправить</string>
+    <string name="snackbar_retry">Повторить</string>
+    <string name="error_app">Ошибка приложения!</string>
+    <string name="error_image_uploading">Ошибка загрузки изображения!</string>
+    <string name="info_image_uploaded">Изображение было загружено успешно!</string>
+    <string name="error_image_deleting">Ошибка удаления изображения!</string>
+
+    <!-- Permissions -->
+    <string name="permission_requied">Требуется разрешение</string>
+    <string name="perm_read_external_storage_message">Для этого приложения требуется разрешение допуска к внешнему хранилищу, чтобы загружать из него изображения.</string>
+
+    <!-- menu options -->
+    <string name="options_edit">Редактировать</string>
+    <string name="options_delete">Удалить</string>
+    <string name="options_orders">Заказы</string>
+    <string name="options_submit">Отправить</string>
+    <string name="options_logout">Выйти</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="pizzas_fragment_label">Пиццы</string>
+    <string name="pizza_fragment_label">Пицца</string>
+    <string name="new_pizza_fragment_label">Новая Пицца</string>
+    <string name="edit_pizza_fragment_label">Редактировать Пиццу</string>
+    <string name="orders_fragment_label">Заказы</string>
+    <string name="order_fragment_label">Заказ</string>
+
+    <!-- Pizza -->
+    <string name="pizza_small_size">Маленькая</string>
+    <string name="pizza_middle_size">Средняя</string>
+    <string name="pizza_large_size">Большая</string>
+    <string name="pizza_name_hint">Название пицы</string>
+    <string name="pizza_consist_hint">Состав</string>
+    <string name="pizza_price_hint">Цена</string>
+    <string name="pizza_name_field_error">Требуется ввод в поле Название!</string>
+    <string name="pizza_consist_field_error">Требуется ввод в поле Состав!</string>
+    <string name="pizza_price_field_error">Требуется ввод в поле Цена!</string>
+    <string name="info_added_pizza">Пицца была добавлена успешно!</string>
+    <string name="info_updated_pizza">Пицца была обновлена успешно!</string>
+    <string name="dialog_delete_pizza">Вы хотите удалить пиццу?</string>
+    <string name="pizza_price">%1$d руб.</string>
+    <string name="pizza_count">Количество: %1$d</string>
+    <string name="pizza_size">Размер: %1$s</string>
+    <string name="phone_view">Телефон: %1$s</string>
+    <string name="address_view">Адресс: %1$s</string>
+    <string name="date_view">Дата: %1$s</string>
+    <string name="helper_text_requied">Обязательно*</string>
+
+</resources>

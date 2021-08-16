@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "291328245318",
+    "project_id": "fastpizza-25ec1",
+    "storage_bucket": "fastpizza-25ec1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291328245318:android:8a3b680fdc975c2ddd9447",
+        "android_client_info": {
+          "package_name": "app.mobilebrainz.fastpizza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291328245318-8qu9fus2rbemvu4n0cr9nonjvvgrb63s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChxqYclFGwUpgMRteryOWMtCR9nbX9c6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291328245318-8qu9fus2rbemvu4n0cr9nonjvvgrb63s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291328245318:android:22375bb7a4c4d4dbdd9447",
+        "android_client_info": {
+          "package_name": "app.mobilebrainz.fastpizza.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291328245318-8qu9fus2rbemvu4n0cr9nonjvvgrb63s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChxqYclFGwUpgMRteryOWMtCR9nbX9c6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291328245318-8qu9fus2rbemvu4n0cr9nonjvvgrb63s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

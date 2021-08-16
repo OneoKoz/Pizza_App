@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">Fastpizza</string>
+
+    <string name="submit_order_btn">Submit Order</string>
+    <string name="add_to_busket_btn">To Basket</string>
+    <string name="update_to_busket_btn">Update</string>
+    <string name="delete_from_busket_btn">Delete</string>
+    <string name="snackbar_retry">Retry</string>
+    <string name="error_app">Application Error!</string>
+    <string name="options_delete">Delete</string>
+    <string name="options_logout">Log Out</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="pizzas_fragment_label">Pizzas</string>
+    <string name="pizza_fragment_label">Pizza</string>
+    <string name="basket_fragment_label">Basket</string>
+    <string name="basket_pizza_fragment_label">Basket Pizza</string>
+    <string name="contacts_fragment_label">Contacts</string>
+
+    <string name="pizza_small_size">Small</string>
+    <string name="pizza_middle_size">Middle</string>
+    <string name="pizza_large_size">Large</string>
+    <string name="pizza_price">%1$d rub</string>
+    <string name="info_added_to_basket">Pizza was added successfully!</string>
+    <string name="info_basket_updated">Basket was updated successfully!</string>
+    <string name="info_deleted_from_basket">Pizza was deleted successfully!</string>
+    <string name="info_added_order">Order was added successfully!</string>
+    <string name="pizza_count">Count: %1$d</string>
+    <string name="pizza_size">Size: %1$s</string>
+    <string name="phone_hint">Phone</string>
+    <string name="address_hint">Address</string>
+    <string name="phone_field_error">Phone field is required!</string>
+    <string name="address_field_error">Address field is required!</string>
+    <string name="info_basket_deleted">Basket was cleared successfully!</string>
+    <string name="helper_text_requied">Requied*</string>
+
+    update_to_busket_btn
+
+    <!-- Send email -->
+    <string name="choose_email_client">Choose email client and send message</string>
+    <string name="send_mail_error">There are no email clients installed.</string>
+
+    <string name="info_view"><![CDATA[
+        <h4>ООО \"Фастпицца\"</h4>
+        <p>
+        Юридический адресс: г.Минск, ул. Космонавтов, д.24 оф.205.
+        </p>
+        <p>
+        Время обработки заказов: с 8.00 до 22.00 без выходных.<br>
+        Время доставки: с 8.00 до 24.00 без выходных.
+        </p>
+        <h5>Телефоны</h5>
+        <p>
+        A1 +375(29) 123-45-67<br>
+        МТС +375(29) 123-45-67<br>
+        Life +375(29) 123-45-67
+        </p>
+    ]]></string>
+
+</resources>

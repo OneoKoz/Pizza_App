@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pizzasFragment">
+
+    <fragment
+        android:id="@+id/pizzasFragment"
+        android:name="app.mobilebrainz.fastpizza.fragment.PizzasFragment"
+        android:label="@string/pizzas_fragment_label"
+        tools:layout="@layout/fragment_pizzas">
+        <action
+            android:id="@+id/to_pizzaFragment"
+            app:destination="@id/pizzaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pizzaFragment"
+        android:name="app.mobilebrainz.fastpizza.fragment.PizzaFragment"
+        android:label="@string/pizza_fragment_label"
+        tools:layout="@layout/fragment_pizza">
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="app.mobilebrainz.fastpizza.fragment.BasketFragment"
+        android:label="@string/basket_fragment_label"
+        tools:layout="@layout/fragment_basket">
+        <action
+            android:id="@+id/to_basketPizzaFragment"
+            app:destination="@id/basketPizzaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/basketPizzaFragment"
+        android:name="app.mobilebrainz.fastpizza.fragment.BasketPizzaFragment"
+        android:label="@string/basket_pizza_fragment_label"
+        tools:layout="@layout/fragment_basket_pizza">
+        <argument
+            android:name="pizzaid"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="basketid"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="app.mobilebrainz.fastpizza.fragment.ContactsFragment"
+        android:label="@string/contacts_fragment_label"
+        tools:layout="@layout/fragment_contacts">
+    </fragment>
+
+    <!-- Global actions -->
+
+    <action
+        android:id="@+id/to_pizzasFragment"
+        app:destination="@id/pizzasFragment"
+        app:popUpTo="@+id/pizzasFragment"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/to_basketFragment"
+        app:destination="@id/basketFragment"
+        app:popUpTo="@+id/basketFragment"
+        app:popUpToInclusive="true" />
+
+</navigation>

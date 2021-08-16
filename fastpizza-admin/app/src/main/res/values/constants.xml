@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pizza_name_limit_const" translatable="false">128</string>
+    <string name="pizza_consist_limit_const" translatable="false">512</string>
+
+</resources>

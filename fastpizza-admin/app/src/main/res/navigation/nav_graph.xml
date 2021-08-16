@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pizzasFragment">
+
+    <!-- Pizza -->
+
+    <fragment
+        android:id="@+id/pizzasFragment"
+        android:name="app.mobilebrainz.fastpizza.admin.fragment.PizzasFragment"
+        android:label="@string/pizzas_fragment_label"
+        tools:layout="@layout/fragment_pizzas">
+        <action
+            android:id="@+id/to_pizzaFragment"
+            app:destination="@id/pizzaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pizzaFragment"
+        android:name="app.mobilebrainz.fastpizza.admin.fragment.PizzaFragment"
+        android:label="@string/pizza_fragment_label"
+        tools:layout="@layout/fragment_pizza">
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/to_editPizzaFragment"
+            app:destination="@id/editPizzaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newPizzaFragment"
+        android:name="app.mobilebrainz.fastpizza.admin.fragment.NewPizzaFragment"
+        android:label="@string/new_pizza_fragment_label"
+        tools:layout="@layout/fragment_new_pizza">
+    </fragment>
+
+    <fragment
+        android:id="@+id/editPizzaFragment"
+        android:name="app.mobilebrainz.fastpizza.admin.fragment.EditPizzaFragment"
+        android:label="@string/edit_pizza_fragment_label"
+        tools:layout="@layout/fragment_edit_pizza">
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+
+    <!-- Order -->
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="app.mobilebrainz.fastpizza.admin.fragment.OrdersFragment"
+        android:label="@string/orders_fragment_label"
+        tools:layout="@layout/fragment_orders">
+        <action
+            android:id="@+id/to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="app.mobilebrainz.fastpizza.admin.fragment.OrderFragment"
+        android:label="@string/order_fragment_label"
+        tools:layout="@layout/fragment_order">
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/to_pizzaFragment"
+            app:destination="@id/pizzaFragment" />
+    </fragment>
+
+    <!-- Global actions -->
+
+    <action
+        android:id="@+id/to_pizzasFragment"
+        app:destination="@id/pizzasFragment"
+        app:popUpTo="@+id/pizzasFragment"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/to_ordersFragment"
+        app:destination="@id/ordersFragment"
+        app:popUpTo="@+id/ordersFragment"
+        app:popUpToInclusive="true" />
+
+</navigation>

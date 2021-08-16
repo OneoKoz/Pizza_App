@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/submitLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <Button
+                        android:id="@+id/submitOrderBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="@color/textColorOnDark"
+                        android:text="@string/submit_order_btn" />
+
+                    <com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:textColorHint="@color/colorAccent"
+                        app:helperText="@string/helper_text_requied"
+                        app:helperTextTextColor="@color/textColorRequied"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="17"
+                        app:counterTextColor="@color/colorAccent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone_hint">
+
+                        <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+                            android:id="@+id/phoneView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:phonemoji_initialRegionCode="BY" />
+
+                    </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:textColorHint="@color/colorAccent"
+                        app:helperText="@string/helper_text_requied"
+                        app:helperTextTextColor="@color/textColorRequied"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/addressView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/address_hint"
+                            android:textSize="16sp"
+                            android:imeOptions="actionDone"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLength="512"
+                            android:maxLines="10"
+                            android:paddingHorizontal="5dp"
+                            android:singleLine="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">Фастпицца</string>
+
+    <string name="submit_order_btn">Оформить Заказ</string>
+    <string name="add_to_busket_btn">В корзину</string>
+    <string name="update_to_busket_btn">Обновить</string>
+    <string name="delete_from_busket_btn">Удалить</string>
+    <string name="snackbar_retry">Повторить</string>
+    <string name="error_app">Ошибка приложения!</string>
+    <string name="options_delete">Удалить</string>
+    <string name="options_logout">Выйти</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="pizzas_fragment_label">Пиццы</string>
+    <string name="pizza_fragment_label">Пицца</string>
+    <string name="basket_fragment_label">Корзина</string>
+    <string name="basket_pizza_fragment_label">Пицца в корзине</string>
+    <string name="contacts_fragment_label">Контакты</string>
+
+    <string name="pizza_small_size">Маленькая</string>
+    <string name="pizza_middle_size">Средняя</string>
+    <string name="pizza_large_size">Большая</string>
+    <string name="pizza_price">%1$d руб.</string>
+    <string name="info_added_to_basket">Пицца была добавлена успешно!</string>
+    <string name="info_basket_updated">Корзина была обновлена успешно!</string>
+    <string name="info_added_order">Заказ был отправлен успешно!</string>
+    <string name="info_deleted_from_basket">Пицца была удалена успешно!</string>
+    <string name="pizza_count">Количество: %1$d</string>
+    <string name="pizza_size">Размер: %1$s</string>
+    <string name="phone_hint">Телефон</string>
+    <string name="address_hint">Адресс</string>
+    <string name="phone_field_error">Требуется ввод номера телефона!</string>
+    <string name="address_field_error">Требуется ввод адреса!</string>
+    <string name="info_basket_deleted">Корзина была очищена успешно!</string>
+    <string name="helper_text_requied">Обязательно*</string>
+
+    <!-- Send email -->
+    <string name="choose_email_client">Выберите почтовый клиент и отправьте сообщение.</string>
+    <string name="send_mail_error">На вашем устройстве не найден почтовый клиент! </string>
+
+    <string name="info_view"><![CDATA[
+        <h4>ООО \"Фастпицца\"</h4>
+        <p>
+        Юридический адресс: г.Минск, ул. Космонавтов, д.24 оф.205.
+        </p>
+        <p>
+        Время обработки заказов: с 8.00 до 22.00 без выходных.<br>
+        Время доставки: с 8.00 до 24.00 без выходных.
+        </p>
+        <h5>Телефоны</h5>
+        <p>
+        A1 +375(29) 123-45-67<br>
+        МТС +375(29) 123-45-67<br>
+        Life +375(29) 123-45-67
+        </p>
+    ]]></string>
+
+</resources>

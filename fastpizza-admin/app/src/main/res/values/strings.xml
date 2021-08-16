@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Fastpizza-admin</string>
+
+    <string name="image_desc_image">Image</string>
+    <string name="choose_image_btn">Choose image</string>
+    <string name="delete_image_btn">Delete image</string>
+    <string name="submit_btn">Submit</string>
+    <string name="snackbar_retry">Retry</string>
+    <string name="error_app">Application Error!</string>
+    <string name="error_image_uploading">Error image uploading!</string>
+    <string name="info_image_uploaded">Image was uploaded successfully!</string>
+    <string name="error_image_deleting">Error image deleting!</string>
+
+    <!-- Permissions -->
+    <string name="permission_requied">Permission required</string>
+    <string name="perm_read_external_storage_message">Permission to access the external storage is required for this app to load images.</string>
+
+    <!-- menu options -->
+    <string name="options_edit">Edit</string>
+    <string name="options_delete">Delete</string>
+    <string name="options_orders">Orders</string>
+    <string name="options_submit">Submit</string>
+    <string name="options_logout">Log Out</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="pizzas_fragment_label">Pizzas</string>
+    <string name="pizza_fragment_label">Pizza</string>
+    <string name="new_pizza_fragment_label">New Pizza</string>
+    <string name="edit_pizza_fragment_label">Edit Pizza</string>
+    <string name="orders_fragment_label">Orders</string>
+    <string name="order_fragment_label">Order</string>
+
+    <!-- Pizza -->
+    <string name="pizza_small_size">Small</string>
+    <string name="pizza_middle_size">Middle</string>
+    <string name="pizza_large_size">Large</string>
+    <string name="pizza_name_hint">Name of Pizza</string>
+    <string name="pizza_consist_hint">Consist</string>
+    <string name="pizza_price_hint">Price</string>
+    <string name="pizza_name_field_error">Name field is required!</string>
+    <string name="pizza_consist_field_error">Consist field is required!</string>
+    <string name="pizza_price_field_error">Price field is required!</string>
+    <string name="pizza_count">Count: %1$d</string>
+    <string name="pizza_size">Size: %1$s</string>
+    <string name="info_added_pizza">Pizza was added successfully!</string>
+    <string name="info_updated_pizza">Pizza was updated successfully!</string>
+    <string name="pizza_price">%1$drub</string>
+    <string name="dialog_delete_pizza">Do you want to delete the pizza?</string>
+    <string name="phone_view">Phone: %1$s</string>
+    <string name="address_view">Address: %1$s</string>
+    <string name="date_view">Date: %1$s</string>
+    <string name="helper_text_requied">Requied*</string>
+
+</resources>
